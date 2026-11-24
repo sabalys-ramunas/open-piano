@@ -1,0 +1,22 @@
+{
+  "name": "separation-spike",
+  "private": true,
+  "type": "module",
+  "description": "Throwaway spike: in-browser music source separation. Not part of the app build.",
+  "scripts": {
+    "serve": "node serve.mjs 5191 --coi",
+    "serve:plain": "node serve.mjs 5191",
+    "models": "./fetch-models.sh",
+    "testmix": "node synth-testmix.mjs 30 testdata && node synth-testmix.mjs 210 testdata",
+    "bench": "node bench.mjs",
+    "matrix": "./run-matrix.sh && ./run-matrix2.sh",
+    "probe": "node probe-features.mjs"
+  },
+  "dependencies": {
+    "demucs-web": "^1.0.2",
+    "onnxruntime-web": "^1.23.2"
+  },
+  "devDependencies": {
+    "onnxruntime-node": "^1.23.2"
+  }
+}

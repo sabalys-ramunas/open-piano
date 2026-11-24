@@ -1,0 +1,100 @@
+{
+  "format": "piano-catalog",
+  "version": 1,
+  "name": "Piano community lessons",
+  "updated": "2026-11-22",
+  "lessons": [
+    {
+      "id": "satie-gymnopedie-2",
+      "title": "Gymnopédie No. 2",
+      "artist": "Erik Satie",
+      "arranger": "Piano contributors",
+      "difficulty": 3,
+      "tags": [
+        "classical"
+      ],
+      "seconds": 195,
+      "notes": 371,
+      "licence": "Public domain",
+      "credit": "Notes from the Mutopia Project edition typeset by Evin Robertson (Mutopia-2012/12/23-38), https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=38.",
+      "url": "lessons/satie-gymnopedie-2.json",
+      "sha256": "6364b77395f8b99703581e007b023f5de1c978163d296379704ea388e8c3626c",
+      "bytes": 6036,
+      "added": "2026-11-22"
+    },
+    {
+      "id": "schumann-humming-song",
+      "title": "Humming Song (Album for the Young, No. 3)",
+      "artist": "Robert Schumann",
+      "arranger": "Piano contributors",
+      "difficulty": 2,
+      "tags": [
+        "classical",
+        "children"
+      ],
+      "seconds": 95,
+      "notes": 277,
+      "licence": "CC BY-SA 3.0",
+      "credit": "Notes from the Mutopia Project edition typeset by Philippe Hézaine (Mutopia-2011/09/18-651), https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=651.",
+      "url": "lessons/schumann-humming-song.json",
+      "sha256": "4a324e8cb12b11d781ccb2ceaf70542c0055c2a44f0bdfc417036c419e515abc",
+      "bytes": 4769,
+      "added": "2026-11-22"
+    },
+    {
+      "id": "burgmuller-innocence",
+      "title": "Innocence (Op. 100, No. 5)",
+      "artist": "Friedrich Burgmüller",
+      "arranger": "Piano contributors",
+      "difficulty": 3,
+      "tags": [
+        "classical"
+      ],
+      "seconds": 27,
+      "notes": 215,
+      "licence": "Public domain",
+      "credit": "Notes from the Mutopia Project edition typeset by Bas Wassink (Mutopia-2013/01/12-214), https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=214.",
+      "url": "lessons/burgmuller-innocence.json",
+      "sha256": "67f86c1205a9db0b4ceb24c2451eb4e87e49441ee4ce9a45c89536c964868f47",
+      "bytes": 5086,
+      "added": "2026-11-22"
+    },
+    {
+      "id": "joplin-solace",
+      "title": "Solace",
+      "artist": "Scott Joplin",
+      "arranger": "Piano contributors",
+      "difficulty": 4,
+      "tags": [
+        "ragtime"
+      ],
+      "seconds": 246,
+      "notes": 2164,
+      "licence": "Public domain",
+      "credit": "Notes from the Mutopia Project edition typeset by Magnus Lewis-Smith (Mutopia-2015/01/25-482), https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=482.",
+      "url": "lessons/joplin-solace.json",
+      "sha256": "4bc75c0eaf1627bc5cb9f5d5ffc158851b07a611d9ab904d5fa8f1a972e84c2b",
+      "bytes": 47832,
+      "added": "2026-11-22"
+    },
+    {
+      "id": "joplin-solace-easy",
+      "title": "Solace (easy)",
+      "artist": "Scott Joplin",
+      "arranger": "Piano contributors",
+      "difficulty": 3,
+      "tags": [
+        "ragtime",
+        "easy version"
+      ],
+      "seconds": 246,
+      "notes": 862,
+      "licence": "CC0 1.0 (simplified arrangement of a public domain edition)",
+      "credit": "Simplified to the tune and bass notes for this app by the Piano contributors, from the Mutopia Project edition typeset by Magnus Lewis-Smith (Mutopia-2015/01/25-482), https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=482.",
+      "url": "lessons/joplin-solace-easy.json",
+      "sha256": "5788610681c041d7d7b7881198ce710aaea1e518e4720e43f187c6d3e5119442",
+      "bytes": 20522,
+      "added": "2026-11-22"
+    }
+  ]
+}

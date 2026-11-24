@@ -1,0 +1,66 @@
+/* Sheet music view: cream paper and ink from the app's tokens. Owned by the sheet music area. */
+
+.sheet-view {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.sheet-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.sheet-caption {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--sheet-strip, 0px) + 10px);
+  transform: translateX(-50%);
+  max-width: min(92%, 52ch);
+  margin: 0;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  background: var(--paper-2);
+  color: var(--ink-muted);
+  font-size: var(--text-sm);
+  line-height: 1.35;
+  text-align: center;
+  pointer-events: none;
+}
+
+.sheet-toggle {
+  --btn-bg: var(--paper-2);
+  --btn-bg-hover: var(--paper-3);
+  --btn-fg: var(--ink);
+  position: absolute;
+  right: 12px;
+  bottom: calc(var(--sheet-strip, 0px) + 10px);
+  z-index: 1;
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  font-size: var(--text-sm);
+  box-shadow: 0 3px 0 var(--paper-line);
+}
+
+.sheet-toggle:focus-visible {
+  box-shadow: 0 0 0 3px var(--paper), 0 0 0 6px var(--ocean-2);
+}
+
+.sheet-toggle[hidden],
+.sheet-caption[hidden] {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .sheet-caption {
+    left: 12px;
+    right: 132px;
+    transform: none;
+    max-width: none;
+    border-radius: var(--radius);
+    text-align: left;
+  }
+}

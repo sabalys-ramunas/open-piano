@@ -1,0 +1,662 @@
+{
+  "about": "Where every built-in song comes from. scripts/build-songs.mjs downloads each MIDI file, checks its sha256, and turns it into a lesson in public/songs/. The downloads are kept outside the project. Only editions whose licence allows sharing and changing are listed; share-alike terms carry over to the lessons made from them. The \"community\" list makes the example lessons of the community catalog seed (community/lessons/), copied to public/community/ for the app.",
+  "mutopia": [
+    {
+      "file": "petzold-minuet-in-g",
+      "title": "Minuet in G major",
+      "by": "Christian Petzold (from the Notebook for Anna Magdalena Bach)",
+      "tags": [
+        "classical",
+        "dance"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWVAnh114/anna-magdalena-04/anna-magdalena-04.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=75",
+      "mutopiaId": "Mutopia-2017/01/19-75",
+      "typesetter": "Allen Garvin",
+      "sourceLicence": "Public Domain",
+      "sha256": "fd87a6673e18104047842a1c858d2c9d8eb9ad845d7a8fa46e3664b17642cb75"
+    },
+    {
+      "file": "petzold-minuet-in-g-minor",
+      "title": "Minuet in G minor",
+      "by": "Christian Petzold (from the Notebook for Anna Magdalena Bach)",
+      "tags": [
+        "classical",
+        "dance"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWVAnh115/anna-magdalena-05/anna-magdalena-05.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=76",
+      "mutopiaId": "Mutopia-2015/08/21-76",
+      "typesetter": "Allen Garvin",
+      "sourceLicence": "Public Domain",
+      "sha256": "6584a133df31cc3635af7c616b14e8c67f8d99df96a91371c54daf3745d4f444"
+    },
+    {
+      "file": "musette-in-d",
+      "title": "Musette in D major",
+      "by": "Anonymous (from the Notebook for Anna Magdalena Bach)",
+      "tags": [
+        "classical",
+        "dance"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWVAnh126/anna-magdalena-22/anna-magdalena-22.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=79",
+      "mutopiaId": "Mutopia-2013/01/06-79",
+      "typesetter": "Allen Garvin",
+      "sourceLicence": "Public Domain",
+      "sha256": "3b03c3939b767a0d46b77eba058d6decc0f191bfb1aa81a1a3bafc9c49098275"
+    },
+    {
+      "file": "minuet-in-a-minor",
+      "title": "Minuet in A minor",
+      "by": "Anonymous (from the Notebook for Anna Magdalena Bach)",
+      "tags": [
+        "classical",
+        "dance"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWVAnh120/BWV-120/BWV-120.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1612",
+      "mutopiaId": "Mutopia-2009/01/06-1612",
+      "typesetter": "Steven McDougall",
+      "sourceLicence": "Public Domain",
+      "sha256": "0946fa8ab89a3340e53edacb213bbc3e21e45522057b062614ccdfc8e99ffc66"
+    },
+    {
+      "file": "mozart-minuet-k2",
+      "title": "Minuet in F major, K. 2",
+      "by": "Wolfgang Amadeus Mozart",
+      "tags": [
+        "classical",
+        "dance",
+        "children"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/MozartWA/KV2/menuet_k2/menuet_k2.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1770",
+      "mutopiaId": "Mutopia-2016/11/30-1770",
+      "typesetter": "Nicolas Morant",
+      "sourceLicence": "Public Domain",
+      "sha256": "7446008d77c7237d814b64f698e8fadbb3ee1e7bf914a8dd643ee9f99523d120"
+    },
+    {
+      "file": "schumann-melody",
+      "title": "Melody (Album for the Young, No. 1)",
+      "by": "Robert Schumann",
+      "tags": [
+        "classical",
+        "children"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-01-melodie/schumann-op68-01-melodie.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=647",
+      "mutopiaId": "Mutopia-2007/02/11-647",
+      "typesetter": "Philippe Hézaine",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 2.5",
+      "sha256": "f05a2e1f1fa397f4617d13d6b7bf679550ad9ae8032ed8c6b0f8446d519f5419"
+    },
+    {
+      "file": "schumann-soldiers-march",
+      "title": "Soldiers' March (Album for the Young, No. 2)",
+      "by": "Robert Schumann",
+      "tags": [
+        "classical",
+        "children",
+        "march"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-02-marche-militaire/schumann-op68-02-marche-militaire.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=650",
+      "mutopiaId": "Mutopia-2007/02/11-650",
+      "typesetter": "Philippe Hézaine",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 2.5",
+      "sha256": "7af6c1c20db09d34963adf9e18d99266e51b6b26c361f0ba8d0d09d001a46bb7"
+    },
+    {
+      "file": "schumann-happy-farmer",
+      "title": "The Happy Farmer (Album for the Young, No. 10)",
+      "by": "Robert Schumann",
+      "tags": [
+        "classical",
+        "children"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-10-gai-laboureur/schumann-op68-10-gai-laboureur.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=659",
+      "mutopiaId": "Mutopia-2007/02/11-659",
+      "typesetter": "Philippe Hézaine",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 2.5",
+      "sha256": "2cdada01ea988df090bfd0ab4bc377b28d97c7dee390a862822e541a47d921de"
+    },
+    {
+      "file": "schumann-wild-rider",
+      "title": "The Wild Rider (Album for the Young, No. 8)",
+      "by": "Robert Schumann",
+      "tags": [
+        "classical",
+        "children"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-08-cavalier-sauvage/schumann-op68-08-cavalier-sauvage.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=655",
+      "mutopiaId": "Mutopia-2007/02/11-655",
+      "typesetter": "Philippe Hézaine",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 2.5",
+      "sha256": "197f870dea372a09c7905b9b02c6ed3b4c6b10b18a3b79c421ca01947dc45991"
+    },
+    {
+      "file": "schumann-traumerei",
+      "title": "Träumerei (Scenes from Childhood, No. 7)",
+      "by": "Robert Schumann",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No07/SchumannOp15No07.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=504",
+      "mutopiaId": "Mutopia-2005/12/27-504",
+      "typesetter": "Ying-Chun Liu",
+      "sourceLicence": "Public Domain",
+      "sha256": "6e0045d5783ff28dedcf05813074fe407ca3846e5e2a7246f2793ac5614e4851"
+    },
+    {
+      "file": "burgmuller-candour",
+      "title": "La Candeur (Op. 100, No. 1)",
+      "by": "Friedrich Burgmüller",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/BurgmullerJFF/O100/25EF-01/25EF-01.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=202",
+      "mutopiaId": "Mutopia-2013/01/12-202",
+      "typesetter": "Bas Wassink",
+      "sourceLicence": "Public Domain",
+      "sha256": "ad185dbf3cb7e3e187cbe6e38c5ead706cf375b9d441f7191429027436b2a8e4"
+    },
+    {
+      "file": "burgmuller-arabesque",
+      "title": "Arabesque (Op. 100, No. 2)",
+      "by": "Friedrich Burgmüller",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/BurgmullerJFF/O100/25EF-02/25EF-02.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=203",
+      "mutopiaId": "Mutopia-2013/01/12-203",
+      "typesetter": "Bas Wassink",
+      "sourceLicence": "Public Domain",
+      "sha256": "9b689a9b3f178e7bb2b5899d0559e223e9d8de7081d83fc087760ac2b4d378e1"
+    },
+    {
+      "file": "burgmuller-pastorale",
+      "title": "La Pastorale (Op. 100, No. 3)",
+      "by": "Friedrich Burgmüller",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/BurgmullerJFF/O100/25EF-03/25EF-03.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=218",
+      "mutopiaId": "Mutopia-2013/01/12-218",
+      "typesetter": "Bas Wassink",
+      "sourceLicence": "Public Domain",
+      "sha256": "192500ee12358537bf92811064ee4ad0b680c78302d5762175a3c32fe573a577"
+    },
+    {
+      "file": "burgmuller-ballade",
+      "title": "Ballade (Op. 100, No. 15)",
+      "by": "Friedrich Burgmüller",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/BurgmullerJFF/O100/25EF-15/25EF-15.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=227",
+      "mutopiaId": "Mutopia-2013/01/12-227",
+      "typesetter": "Bas Wassink",
+      "sourceLicence": "Public Domain",
+      "sha256": "cfba2544b8049f72bfda038620ff0543e9e1845b6e4d7431e4798f50ce06f716"
+    },
+    {
+      "file": "tchaikovsky-morning-prayer",
+      "title": "Morning Prayer (Album for the Young, No. 1)",
+      "by": "Pyotr Ilyich Tchaikovsky",
+      "tags": [
+        "classical",
+        "children"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/01MorningPrayer/01MorningPrayer.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2032",
+      "mutopiaId": "Mutopia-2015/07/09-2032",
+      "typesetter": "Rem Zolotykh",
+      "sourceLicence": "Public Domain",
+      "sha256": "7ec37d25e8ea12d0b2053a5916140f7d03b4cdf1357c01171fd8a3c1d8c6e50f"
+    },
+    {
+      "file": "tchaikovsky-old-french-song",
+      "title": "Old French Song (Album for the Young, No. 16)",
+      "by": "Pyotr Ilyich Tchaikovsky",
+      "tags": [
+        "classical",
+        "children"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/16OldFrenchSong/16OldFrenchSong.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2080",
+      "mutopiaId": "Mutopia-2015/11/27-2080",
+      "typesetter": "David McNamara",
+      "sourceLicence": "Public Domain",
+      "sha256": "112c3b61dab55f58bc44d9f3522ef21b3479ffa1953097783ff8c4f10e40175d"
+    },
+    {
+      "file": "tchaikovsky-wooden-soldiers",
+      "title": "March of the Wooden Soldiers (Album for the Young, No. 5)",
+      "by": "Pyotr Ilyich Tchaikovsky",
+      "tags": [
+        "classical",
+        "children",
+        "march"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/05MarchOfTheWoodenSoldiers/05MarchOfTheWoodenSoldiers.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1806",
+      "mutopiaId": "Mutopia-2015/01/17-1806",
+      "typesetter": "Anonymous",
+      "sourceLicence": "Public Domain",
+      "sha256": "a9717d793785c3c702d85e20f99a81de60faedd29fc4e7dcb240fbc99a9b0d2b"
+    },
+    {
+      "file": "bach-prelude-in-c",
+      "title": "Prelude in C major, BWV 846",
+      "by": "Johann Sebastian Bach",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWV846/wtk1-prelude1/wtk1-prelude1.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=5",
+      "mutopiaId": "Mutopia-2011/09/12-5",
+      "typesetter": "Tobias Erbsland",
+      "sourceLicence": "Public Domain",
+      "sha256": "874e07d0479542971bfceaf420d6117da8d602d89d26eea4610e7dd1ef58bf26"
+    },
+    {
+      "file": "bach-invention-1",
+      "title": "Invention No. 1 in C major, BWV 772",
+      "by": "Johann Sebastian Bach",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWV772/bach-invention-01/bach-invention-01.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=40",
+      "mutopiaId": "Mutopia-2008/06/15-40",
+      "typesetter": "jeff covey",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 3.0",
+      "sha256": "9b9a6213941932d5171d9102d85912c3c1c61f8176ce02005cd2198881823c2d"
+    },
+    {
+      "file": "bach-chorale-bwv269",
+      "title": "Aus meines Herzens Grunde (chorale, BWV 269)",
+      "by": "Johann Sebastian Bach",
+      "tags": [
+        "hymn",
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWV269/bwv_269/bwv_269.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=378",
+      "mutopiaId": "Mutopia-2013/03/22-378",
+      "typesetter": "Laurent Ducos",
+      "sourceLicence": "Public Domain",
+      "sha256": "783a5a944f28030876a84c753a47abeeff93c56adb6a3dd7c396d06e07184d10"
+    },
+    {
+      "file": "bach-chorale-bwv347",
+      "title": "Ich dank dir, lieber Herre (chorale, BWV 347)",
+      "by": "Johann Sebastian Bach",
+      "tags": [
+        "hymn",
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/BachJS/BWV347/bwv347/bwv347.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=379",
+      "mutopiaId": "Mutopia-2016/04/25-379",
+      "typesetter": "Laurent Ducos",
+      "sourceLicence": "Public Domain",
+      "sha256": "0063beea94fbe0db31ce9dbee1a3a07c7e361322724b4190d80ff63ea817bb11"
+    },
+    {
+      "file": "beethoven-fur-elise",
+      "title": "Für Elise",
+      "by": "Ludwig van Beethoven",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/WoO59/fur_Elise_WoO59/fur_Elise_WoO59.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=931",
+      "mutopiaId": "Mutopia-2015/08/18-931",
+      "typesetter": "Stelios Samelis",
+      "sourceLicence": "Public Domain",
+      "sha256": "1c12c21c7bbf4cf163896732672648a69d497636059837abd153c71abe50215a",
+      "easy": {
+        "difficulty": 3
+      }
+    },
+    {
+      "file": "beethoven-sonata-49-2-minuet",
+      "title": "Sonata Op. 49 No. 2: Tempo di Menuetto",
+      "by": "Ludwig van Beethoven",
+      "tags": [
+        "classical",
+        "dance"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O49/LVB_Sonate_49no2_2/LVB_Sonate_49no2_2.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=777",
+      "mutopiaId": "Mutopia-2006/06/05-777",
+      "typesetter": "Stelios Samelis",
+      "sourceLicence": "Public Domain",
+      "sha256": "bbc781ca46ebd2e22e4fc9976a5fd5647c1da43dc7d545525c4b87d0244e251f"
+    },
+    {
+      "file": "satie-gymnopedie-1",
+      "title": "Gymnopédie No. 1",
+      "by": "Erik Satie",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/SatieE/gymnopedie_1/gymnopedie_1.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=37",
+      "mutopiaId": "Mutopia-2014/12/14-37",
+      "typesetter": "Evin Robertson",
+      "sourceLicence": "Public Domain",
+      "sha256": "09ce7337b4bf42ba12e1aa64b4c7dc7fcfa6455f1070cb12f8880a755df97384",
+      "easy": {
+        "difficulty": 2
+      }
+    },
+    {
+      "file": "chopin-prelude-e-minor",
+      "title": "Prelude in E minor, Op. 28 No. 4",
+      "by": "Frédéric Chopin",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-4/Chop-28-4.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=468",
+      "mutopiaId": "Mutopia-2016/10/28-468",
+      "typesetter": "Magnus Lewis-Smith",
+      "sourceLicence": "Public Domain",
+      "sha256": "c1d7e05aa4e6e2baeec2e9108402a969c16d5df302b82fd66d110634697f2e3b"
+    },
+    {
+      "file": "chopin-prelude-a-major",
+      "title": "Prelude in A major, Op. 28 No. 7",
+      "by": "Frédéric Chopin",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-7/Chop-28-7.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=470",
+      "mutopiaId": "Mutopia-2015/01/17-470",
+      "typesetter": "Magnus Lewis-Smith",
+      "sourceLicence": "Public Domain",
+      "sha256": "6eed7f2185afd852f01d695e50db84cdb4c8742de1a26294dc3202569346ef36"
+    },
+    {
+      "file": "chopin-prelude-c-minor",
+      "title": "Prelude in C minor, Op. 28 No. 20",
+      "by": "Frédéric Chopin",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-20/Chop-28-20.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=472",
+      "mutopiaId": "Mutopia-2011/06/19-472",
+      "typesetter": "Magnus Lewis-Smith",
+      "sourceLicence": "Public Domain",
+      "sha256": "9cc6c417d4bb261644f6bd3d00033025e675a25694fd172be2f98e93efc1fcfe"
+    },
+    {
+      "file": "chopin-nocturne-op9-2",
+      "title": "Nocturne in E-flat major, Op. 9 No. 2",
+      "by": "Frédéric Chopin",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 5,
+      "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O9/chopin_nocturne_op9_n2/chopin_nocturne_op9_n2.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1590",
+      "mutopiaId": "Mutopia-2014/12/18-1590",
+      "typesetter": "Renato Biolcati Rinaldi",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 3.0",
+      "sha256": "e202d3941ce5f26397f57f59f0e2e4e3ad9e19061fa3c4dc596c5ee6a6a2548e"
+    },
+    {
+      "file": "grieg-mountain-king",
+      "title": "In the Hall of the Mountain King",
+      "by": "Edvard Grieg",
+      "tags": [
+        "classical",
+        "march"
+      ],
+      "difficulty": 5,
+      "url": "https://www.mutopiaproject.org/ftp/GriegE/O46/Dans_l_antre_du_roi_de_la_montagne/Dans_l_antre_du_roi_de_la_montagne.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1888",
+      "mutopiaId": "Mutopia-2013/12/07-1888",
+      "typesetter": "Coyau",
+      "sourceLicence": "Public Domain",
+      "sha256": "0c256a809b5af1faef81b6aad6106088a71d76b12435d5f0775d4ceee60c917e"
+    },
+    {
+      "file": "mozart-sonata-k545-1",
+      "title": "Sonata in C major, K. 545: first movement",
+      "by": "Wolfgang Amadeus Mozart",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/MozartWA/KV545/K545-1/K545-1.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=998",
+      "mutopiaId": "Mutopia-2013/09/01-998",
+      "typesetter": "Alejandro Sierra",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 3.0",
+      "sha256": "54e510ba1e5865aeedc4e96bf70b83c93ecddf5b66660033ef98a5a8204ab02d",
+      "easy": {
+        "difficulty": 3
+      }
+    },
+    {
+      "file": "mozart-rondo-alla-turca",
+      "title": "Rondo alla Turca (Sonata K. 331)",
+      "by": "Wolfgang Amadeus Mozart",
+      "tags": [
+        "classical",
+        "march"
+      ],
+      "difficulty": 5,
+      "url": "https://www.mutopiaproject.org/ftp/MozartWA/KV331/KV331_3_RondoAllaTurca/KV331_3_RondoAllaTurca.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=108",
+      "mutopiaId": "Mutopia-2015/08/13-108",
+      "typesetter": "Rune Zedeler and Chris Sawer",
+      "sourceLicence": "Public Domain",
+      "sha256": "c14299cbdd34c8b2081da84dc06519ef8a52a0d589ee53c758d28b8e3d727d1c",
+      "easy": {
+        "difficulty": 3
+      },
+      "tempoScale": 1.8
+    },
+    {
+      "file": "joplin-the-entertainer",
+      "title": "The Entertainer",
+      "by": "Scott Joplin",
+      "tags": [
+        "ragtime"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/JoplinS/entertainer/entertainer.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=263",
+      "mutopiaId": "Mutopia-2016/11/25-263",
+      "typesetter": "Chris Sawer",
+      "sourceLicence": "Public Domain",
+      "sha256": "33e4e81ee64ffb2edf90d1c6a1ddee7276507296bfb915c2bb775231a467f066",
+      "easy": {
+        "difficulty": 3
+      }
+    },
+    {
+      "file": "joplin-maple-leaf-rag",
+      "title": "Maple Leaf Rag",
+      "by": "Scott Joplin",
+      "tags": [
+        "ragtime"
+      ],
+      "difficulty": 5,
+      "url": "https://www.mutopiaproject.org/ftp/JoplinS/maple/maple.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=23",
+      "mutopiaId": "Mutopia-2011/11/13-23",
+      "typesetter": "Chris Sawer",
+      "sourceLicence": "Public Domain",
+      "sha256": "3dd712a85fabd267f5a2cee5cb23af4683408c2f29b8814721844498f1ee4f66"
+    },
+    {
+      "file": "debussy-clair-de-lune",
+      "title": "Clair de lune",
+      "by": "Claude Debussy",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 5,
+      "url": "https://www.mutopiaproject.org/ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1778",
+      "mutopiaId": "Mutopia-2010/12/21-1778",
+      "typesetter": "Keith OHara",
+      "sourceLicence": "Public Domain",
+      "sha256": "4eee9a1546ffde1ff74cb9824ba0e57cbc821185a15185bfea9faed97820bf8c"
+    },
+    {
+      "file": "debussy-arabesque-1",
+      "title": "Arabesque No. 1",
+      "by": "Claude Debussy",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 5,
+      "url": "https://www.mutopiaproject.org/ftp/DebussyC/L66/debussy_Arabesque_1/debussy_Arabesque_1.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1777",
+      "mutopiaId": "Mutopia-2011/10/25-1777",
+      "typesetter": "Keith OHara",
+      "sourceLicence": "Public Domain",
+      "sha256": "6732dc10799ec0af47d19d9095562d0671864a750129e0279901def169a34757"
+    },
+    {
+      "file": "handel-sonatina-b-flat",
+      "title": "Sonatina in B-flat major, HWV 585",
+      "by": "George Frideric Handel",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/HandelGF/HWV585/sonatina-in-b-flat-major/sonatina-in-b-flat-major.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=98",
+      "mutopiaId": "Mutopia-2013/03/22-98",
+      "typesetter": "David Maddock",
+      "sourceLicence": "Public Domain",
+      "sha256": "92d59f554dfc5fb6a509a1c7eb5db958c9d51819e7411d06208b7deb140a2811"
+    },
+    {
+      "file": "grieg-album-leaf",
+      "title": "Album Leaf, Op. 12 No. 7",
+      "by": "Edvard Grieg",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/GriegE/O12/No03_Albumblatt/No03_Albumblatt.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2194",
+      "mutopiaId": "Mutopia-2017/10/15-2194",
+      "typesetter": "Knute Snortum",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 4.0",
+      "sha256": "7b89a0c2e9d83afcf348ba374cc846ad1e045f78caf4f45d3cebcc2e8e53d746"
+    }
+  ],
+  "community": [
+    {
+      "file": "satie-gymnopedie-2",
+      "title": "Gymnopédie No. 2",
+      "by": "Erik Satie",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/SatieE/gymnopedie_2/gymnopedie_2.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=38",
+      "mutopiaId": "Mutopia-2012/12/23-38",
+      "typesetter": "Evin Robertson",
+      "sourceLicence": "Public Domain",
+      "sha256": "02e8ae8d7e1f6073f12f62a61a63cf07b260a1cf49f4a9008ee4e3f8e1934d30"
+    },
+    {
+      "file": "joplin-solace",
+      "title": "Solace",
+      "by": "Scott Joplin",
+      "tags": [
+        "ragtime"
+      ],
+      "difficulty": 4,
+      "url": "https://www.mutopiaproject.org/ftp/JoplinS/solace/solace.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=482",
+      "mutopiaId": "Mutopia-2015/01/25-482",
+      "typesetter": "Magnus Lewis-Smith",
+      "sourceLicence": "Public Domain",
+      "easy": {
+        "difficulty": 3
+      },
+      "sha256": "21ef2b529c4cb2bf095cdeda1deed7642f31dfb08b853d6022b0269346367f67"
+    },
+    {
+      "file": "burgmuller-innocence",
+      "title": "Innocence (Op. 100, No. 5)",
+      "by": "Friedrich Burgmüller",
+      "tags": [
+        "classical"
+      ],
+      "difficulty": 3,
+      "url": "https://www.mutopiaproject.org/ftp/BurgmullerJFF/O100/25EF-05/25EF-05.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=214",
+      "mutopiaId": "Mutopia-2013/01/12-214",
+      "typesetter": "Bas Wassink",
+      "sourceLicence": "Public Domain",
+      "sha256": "39768b50abb623d24986b0e3993518ca92a6f1340d6154fc092f218cb6b97fee"
+    },
+    {
+      "file": "schumann-humming-song",
+      "title": "Humming Song (Album for the Young, No. 3)",
+      "by": "Robert Schumann",
+      "tags": [
+        "classical",
+        "children"
+      ],
+      "difficulty": 2,
+      "url": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-03-chanson-fredonnee/schumann-op68-03-chanson-fredonnee.mid",
+      "info": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=651",
+      "mutopiaId": "Mutopia-2011/09/18-651",
+      "typesetter": "Philippe Hézaine",
+      "sourceLicence": "Creative Commons Attribution-ShareAlike 3.0",
+      "sha256": "9d8872ff88f556e4426b1c304947e8eb396807d06d593bc3e9a5e29c364c1462"
+    }
+  ]
+}

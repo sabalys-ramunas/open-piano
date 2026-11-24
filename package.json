@@ -1,0 +1,30 @@
+{
+  "name": "piano",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "build-songs": "node scripts/build-songs.mjs",
+    "check-catalog": "node community/tools/validate.mjs community --mirror public/community",
+    "e2e": "tsc --noEmit -p e2e && playwright test -c e2e/playwright.config.ts",
+    "ios": "npm run build && rm -rf ios/web && cp -R dist ios/web && rm -f ios/web/sw.js && rm -rf ios/web/models && cd ios && xcodegen generate"
+  },
+  "dependencies": {
+    "@spotify/basic-pitch": "^1.0.1",
+    "@tensorflow/tfjs": "^3.21.0",
+    "@tensorflow/tfjs-backend-wasm": "^3.21.0",
+    "@tonejs/midi": "^2.0.28",
+    "onnxruntime-web": "1.23.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.1",
+    "fake-indexeddb": "^6.2.8",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}

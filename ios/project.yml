@@ -1,0 +1,49 @@
+# The iPad and iPhone shell. Generate the Xcode project with: npm run ios
+name: Piano
+options:
+  bundleIdPrefix: org.example
+  deploymentTarget:
+    iOS: "16.0"
+configFiles:
+  Debug: Config.xcconfig
+  Release: Config.xcconfig
+targets:
+  Piano:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      # The built web app, copied here by `npm run ios`.
+      - path: web
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_NAME: Piano
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Piano
+        LSRequiresIPhoneOS: true
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSMicrophoneUsageDescription: Piano listens to your piano so it can tell which notes you play. Nothing is recorded or sent anywhere.
+        NSBluetoothAlwaysUsageDescription: Piano connects to your Bluetooth MIDI keyboard so it can hear the notes you play. Nothing is shared.

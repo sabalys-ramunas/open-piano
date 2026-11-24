@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>%APP_NAME%</title>
+    <meta name="description" content="%APP_TAGLINE%" />
+    <meta name="theme-color" content="#09627b" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="%APP_NAME%" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" href="/fonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/atkinson-regular-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      html { background: linear-gradient(165deg, #09627b, #0b5a80 42%, #17458e) fixed; color: #fff7e8; min-height: 100%; }
+      .boot { margin: auto; padding: 24px; font: 17px/1.5 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; color: #d6ecef; }
+    </style>
+  </head>
+  <body>
+    <div id="app"><p class="boot">Getting the piano ready...</p></div>
+    <noscript>%APP_NAME% needs JavaScript turned on.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

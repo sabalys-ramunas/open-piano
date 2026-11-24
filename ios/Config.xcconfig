@@ -1,0 +1,5 @@
+// Signing settings. Put your own in Local.xcconfig (not checked in), for example:
+//   DEVELOPMENT_TEAM = ABCDE12345
+//   PRODUCT_BUNDLE_IDENTIFIER = com.yourname.piano
+PRODUCT_BUNDLE_IDENTIFIER = org.example.piano
+#include? "Local.xcconfig"

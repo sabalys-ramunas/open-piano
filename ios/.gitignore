@@ -1,0 +1,5 @@
+Local.xcconfig
+web
+build
+*.xcodeproj
+App/Info.plist

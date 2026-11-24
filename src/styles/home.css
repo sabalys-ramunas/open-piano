@@ -1,0 +1,882 @@
+/* Home (Songs): greeting, the big "up next" card, add a song, shelves of picture cards, search, the song sheet and the add-song dialog. Layout only: colours and sizes come from style.css. */
+
+.home {
+  padding-top: var(--space-6);
+}
+
+/* ---- Greeting ---- */
+
+.home-top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.home-mascot {
+  width: 92px;
+  height: 92px;
+  flex: none;
+  animation: bob 3.2s ease-in-out infinite;
+}
+
+.home-hello {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-greeting {
+  margin: 0;
+  font-size: var(--text-4xl);
+  line-height: 1;
+}
+
+.home-sub {
+  margin: var(--space-1) 0 0;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 500;
+}
+
+.home-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.home-chips:empty,
+.home-streak:empty {
+  display: none;
+}
+
+.home-chips .badge {
+  min-height: 36px;
+  font-size: var(--text-sm);
+}
+
+.home-chips .home-connect {
+  /* A real target, not a 36px badge: 44px tall like every control. */
+  min-height: 44px;
+  text-decoration: none;
+  background: var(--wash);
+  color: var(--text);
+  border: 0;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  box-shadow: none;
+}
+
+@media (hover: hover) {
+  .home-chips .home-connect:hover {
+    background: var(--wash-strong);
+    color: var(--text);
+  }
+}
+
+.home-connect:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.home-search-button {
+  align-self: flex-start;
+  --btn-bg: var(--cream);
+  --btn-bg-hover: #fff;
+  --btn-fg: var(--ink);
+  box-shadow: 0 5px 0 rgb(2 24 40 / 0.25);
+}
+
+.home-search-button[aria-expanded='true'] {
+  --btn-bg: var(--sun);
+  --btn-bg-hover: var(--sun-hover);
+}
+
+.home-search-button .icon {
+  width: 28px;
+  height: 28px;
+  stroke-width: 2.75;
+}
+
+.home-save-warning {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding-top: var(--space-4);
+  }
+
+  .home-top {
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .home-mascot {
+    width: 64px;
+    height: 64px;
+  }
+
+  .home-greeting {
+    font-size: 34px;
+  }
+
+  .home-sub {
+    font-size: var(--text-lg);
+  }
+}
+
+/* ---- The two big cards ---- */
+
+.home-lead {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+}
+
+@media (max-width: 1100px) {
+  .home-lead {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.hero-card {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-6);
+  min-height: 280px;
+}
+
+.hero-card::before {
+  /* A soft sun glow behind the art. */
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -60px;
+  top: -80px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: #ffe27a;
+}
+
+.hero-skeleton {
+  width: 100%;
+  height: 200px;
+  --wash: rgb(16 48 74 / 0.08);
+  --wash-strong: rgb(16 48 74 / 0.16);
+}
+
+.hero-art-box {
+  flex: none;
+  width: clamp(140px, 22vw, 220px);
+  aspect-ratio: 1;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transform: rotate(-4deg);
+  box-shadow: 0 8px 0 rgb(16 48 74 / 0.2), 0 18px 30px rgb(16 48 74 / 0.25);
+}
+
+.hero-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-kicker {
+  margin: 0 0 var(--space-1);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: #6b4a00;
+}
+
+.hero-title {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-3xl);
+  line-height: 1.05;
+}
+
+.hero-facts {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-4);
+  font-weight: 700;
+  font-size: var(--text-lg);
+}
+
+.hero-card .star-rating svg {
+  fill: rgb(16 48 74 / 0.15);
+}
+
+.hero-card .star-rating svg.on {
+  fill: var(--ink);
+  filter: none;
+}
+
+.hero-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  max-width: 420px;
+  margin-bottom: var(--space-5);
+  font-weight: 700;
+}
+
+.hero-progress .meter-bar {
+  flex: 1;
+  background: rgb(16 48 74 / 0.15);
+}
+
+.hero-progress .meter-bar > span {
+  background: var(--ink);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+@media (max-width: 600px) {
+  .hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    min-height: 0;
+  }
+
+  .hero-art-box {
+    width: 112px;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    transform: rotate(6deg);
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-kicker,
+  .hero-title {
+    padding-right: 124px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    min-height: 2.1em;
+  }
+
+  .hero-actions .primary {
+    flex: 1;
+  }
+}
+
+/* Add your own song */
+.add-card {
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.add-card::after {
+  /* A big friendly plus in the corner. */
+  content: '';
+  position: absolute;
+  z-index: -1;
+  right: -40px;
+  bottom: -50px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: #ff9a8d;
+}
+
+.add-title {
+  margin: 0;
+  font-size: var(--text-2xl);
+}
+
+.add-text {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-lg);
+}
+
+.add-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-2);
+}
+
+.add-actions .primary {
+  margin-right: var(--space-2);
+}
+
+.add-drop {
+  margin: var(--space-1) 0 0;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  opacity: 0.85;
+}
+
+@media (pointer: coarse) {
+  .add-drop {
+    display: none;
+  }
+}
+
+/* ---- Shelves ---- */
+
+.home-shelves {
+  margin-top: var(--space-2);
+}
+
+/* Level tiles in the "Pick by level" row. */
+.level-tile {
+  --btn-bg: var(--paper);
+  --btn-bg-hover: #fff;
+  --btn-fg: var(--ink);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+  width: 168px;
+  height: 152px;
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 6px 0 rgb(2 24 40 / 0.18);
+  white-space: normal;
+  text-align: left;
+  --focus: 0 0 0 4px var(--ocean-deep), 0 0 0 8px var(--sun);
+}
+
+/* Hover only where there is a pointer that hovers: a tap must not leave it stuck on. */
+@media (hover: hover) {
+  .level-tile:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.level-tile-number {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: var(--sun);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.level-tile-2 .level-tile-number { background: var(--mint); }
+.level-tile-3 .level-tile-number { background: var(--sky); }
+.level-tile-4 .level-tile-number { background: var(--coral); }
+.level-tile-5 .level-tile-number { background: #ff9aa8; }
+
+.level-tile-word {
+  font-size: var(--text-lg);
+}
+
+/* Shared songs teaser. */
+.shared-card {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.shared-art {
+  position: relative;
+  flex: none;
+  width: 230px;
+  height: 150px;
+}
+
+.shared-cover {
+  position: absolute;
+  width: 140px;
+  height: 105px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 0 rgb(16 48 74 / 0.18);
+}
+
+.shared-cover:nth-child(1) { left: 0; top: 30px; transform: rotate(-8deg); }
+.shared-cover:nth-child(2) { left: 50px; top: 0; transform: rotate(3deg); }
+.shared-cover:nth-child(3) { left: 92px; top: 40px; transform: rotate(9deg); }
+
+.shared-text h2 {
+  margin: 0 0 var(--space-1);
+}
+
+.shared-text p {
+  font-size: var(--text-lg);
+}
+
+@media (max-width: 700px) {
+  .shared-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-5);
+  }
+
+  .shared-art {
+    width: 220px;
+    height: 130px;
+  }
+
+  .shared-cover {
+    width: 120px;
+    height: 90px;
+  }
+}
+
+/* ---- Search ---- */
+
+.find-bar {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.find-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.find-title {
+  margin: 0;
+}
+
+.find-input {
+  position: relative;
+}
+
+.find-input .icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%);
+  color: var(--sun);
+  pointer-events: none;
+}
+
+.find-input input {
+  min-height: 64px;
+  padding-left: 56px;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-xl);
+}
+
+.find-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+}
+
+.find-filters > .label {
+  min-width: 48px;
+}
+
+.find-sort {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.find-sort select {
+  width: auto;
+  min-width: 220px;
+}
+
+.find-count {
+  margin: 0 0 var(--space-4);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+}
+
+.find-empty {
+  grid-column: 1 / -1;
+}
+
+/* ---- Song sheet ---- */
+
+.song-sheet .sheet-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.song-sheet-cover {
+  margin: calc(-1 * var(--space-6)) calc(-1 * var(--space-6)) var(--space-2);
+}
+
+.song-sheet-art {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.song-sheet .sheet-close {
+  --btn-bg: var(--paper);
+  --btn-bg-hover: #fff;
+  box-shadow: 0 3px 0 rgb(16 48 74 / 0.2);
+}
+
+.song-sheet-title {
+  margin: 0;
+  font-size: var(--text-3xl);
+}
+
+.song-sheet-by {
+  margin: calc(-1 * var(--space-2)) 0 0;
+  color: var(--ink-muted);
+  font-size: var(--text-lg);
+}
+
+.song-sheet-facts,
+.song-sheet-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-4);
+}
+
+.song-sheet-facts .level {
+  font-size: var(--text-sm);
+  color: var(--ink);
+}
+
+.song-sheet-length,
+.song-sheet-best {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+}
+
+.song-sheet-length .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.mode-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.mode-tiles legend {
+  margin-bottom: var(--space-2);
+  padding: 0;
+}
+
+.mode-tile {
+  --btn-bg: var(--paper-2);
+  --btn-bg-hover: var(--paper-3);
+  --btn-fg: var(--ink);
+  flex-direction: column;
+  gap: 2px;
+  height: auto;
+  min-height: 108px;
+  padding: var(--space-3) var(--space-2);
+  border-radius: var(--radius-lg);
+  white-space: normal;
+  text-align: center;
+}
+
+.mode-tile .icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: var(--space-1);
+}
+
+.mode-tile-label {
+  font-size: var(--text-lg);
+}
+
+.mode-tile-hint {
+  font-family: var(--font-family);
+  font-size: var(--text-xs);
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+.mode-tile[aria-pressed='true'] {
+  --btn-bg: var(--ink);
+  --btn-bg-hover: var(--ink);
+  --btn-fg: var(--cream);
+}
+
+.mode-tile[aria-pressed='true'] .mode-tile-hint {
+  color: #d6ecef;
+}
+
+.mode-tile[aria-pressed='true'] .icon {
+  color: var(--sun);
+}
+
+.song-sheet .primary.big {
+  margin-top: var(--space-2);
+}
+
+.song-sheet-more,
+.song-sheet-confirm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1) var(--space-2);
+}
+
+.song-sheet-confirm p {
+  flex-basis: 100%;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.song-sheet-more .icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 600px) {
+  .song-sheet-cover {
+    margin: calc(-1 * var(--space-5)) calc(-1 * var(--space-4)) var(--space-2);
+  }
+
+  .song-sheet-title {
+    font-size: 30px;
+  }
+
+  .mode-tile {
+    min-height: 96px;
+  }
+}
+
+/* ---- Drag a file over the page ---- */
+
+.drop-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: var(--space-5);
+  background: rgb(4 28 44 / 0.6);
+  pointer-events: none;
+}
+
+.drop-cover-inner {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+  width: min(560px, 100%);
+  padding: var(--space-7) var(--space-5);
+  border: 5px dashed var(--ink);
+  border-radius: var(--radius-xl);
+  background: var(--coral);
+  color: var(--ink);
+  box-shadow: var(--shadow-lg);
+  animation: pop 400ms var(--ease-bounce);
+}
+
+.drop-cover-inner .mascot {
+  width: 120px;
+  height: 120px;
+}
+
+.drop-cover-inner p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-2xl);
+}
+
+/* ---- The add-song dialog (src/home/import-flow.ts), on paper ---- */
+
+.import-dialog .import-card {
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  --text: var(--ink);
+  --muted: var(--ink-muted);
+  --wash: var(--paper-2);
+  --wash-strong: var(--paper-3);
+  --line: var(--paper-line);
+  --line-strong: #b89f74;
+  --bg-raised: #fff;
+  --panel: var(--paper-2);
+  --focus-color: var(--ocean-2);
+  --focus: 0 0 0 3px var(--paper), 0 0 0 6px var(--ocean-2);
+}
+
+.import-dialog .import-card p {
+  color: var(--ink-muted);
+}
+
+.import-dialog h2 {
+  margin-bottom: var(--space-3);
+}
+
+.import-file {
+  display: inline-block;
+  max-width: 100%;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--paper-2);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.import-dialog .import-card .import-file {
+  color: var(--ink);
+}
+
+.import-stage {
+  min-height: 3em;
+}
+
+.import-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.import-bar progress {
+  flex: 1;
+  margin: 0;
+  height: 18px;
+}
+
+.import-percent {
+  min-width: 3.5ch;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  text-align: right;
+}
+
+.import-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.import-message {
+  font-size: var(--text-lg);
+}
+
+.import-promise {
+  font-weight: 700;
+}
+
+.import-problem {
+  color: var(--coral-deep);
+  font-weight: 700;
+}
+
+.level-choices {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+  padding: 0;
+  border: 0;
+}
+
+.level-choices legend {
+  margin-bottom: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+}
+
+.level-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  cursor: pointer;
+}
+
+.level-choice input {
+  margin-top: 2px;
+}
+
+.level-choice > span {
+  display: grid;
+  gap: 2px;
+}
+
+.level-choice .muted {
+  font-size: var(--text-sm);
+}
+
+.level-choice:has(input:checked) {
+  background: var(--sun);
+  box-shadow: inset 0 0 0 2px var(--sun-edge);
+}
+
+.track-list {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius);
+  background: var(--paper-2);
+}
+
+.track-row label {
+  display: grid;
+  gap: 2px;
+}
+
+.track-row .muted {
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 520px) {
+  .track-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

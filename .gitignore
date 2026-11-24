@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+*.local
+test-results
+playwright-report
+# The song splitter's networks (about 80 MB): downloaded, never committed. See docs/architecture.md.
+public/models/
+# The separation prototype's downloads and outputs.
+experiments/separation/node_modules
+experiments/separation/models
+experiments/separation/testdata
+experiments/separation/results

@@ -1,0 +1,143 @@
+/* The dev-only style guide (#/styleguide). Layout only. */
+
+.screen-styleguide .lead {
+  margin-bottom: var(--space-5);
+}
+
+.sg-section {
+  margin: var(--space-7) 0 0;
+}
+
+.sg-title {
+  margin-bottom: var(--space-4);
+}
+
+.sg-code {
+  font: 13px/1.3 ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--muted);
+}
+
+.sg-stack {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.sg-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.sg-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  align-items: start;
+}
+
+.sg-swatches {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.sg-swatch {
+  display: grid;
+  gap: 2px;
+}
+
+.sg-chip {
+  height: 64px;
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.2);
+}
+
+.sg-h {
+  margin: 0 0 var(--space-2);
+}
+
+.sg-paper {
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+}
+
+.sg-icons {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+}
+
+.sg-icon {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.sg-icon .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.sg-progress {
+  display: grid;
+  gap: var(--space-3);
+  width: min(320px, 100%);
+}
+
+.sg-skeleton {
+  width: 200px;
+  height: 80px;
+}
+
+.sg-bigcards {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+}
+
+.sg-covers,
+.sg-units {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.sg-cover,
+.sg-unit {
+  margin: 0;
+  display: grid;
+  gap: var(--space-1);
+  text-align: center;
+  color: var(--muted);
+}
+
+.sg-cover-art {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.sg-unit-art {
+  width: 100%;
+  aspect-ratio: 1;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
+.sg-mascot {
+  width: 120px;
+  height: 120px;
+}
+
+.sg-illustration {
+  width: 160px;
+  height: auto;
+  padding: var(--space-2);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+}
