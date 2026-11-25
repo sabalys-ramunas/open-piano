@@ -6,6 +6,11 @@
 </p>
 
 <p align="center">
+  <a href="https://sabalys-ramunas.github.io/open-piano/"><b>▶ Try the live demo</b></a><br>
+  <sub>Best in Chrome or Edge on a computer. Alpha: expect bugs.</sub>
+</p>
+
+<p align="center">
   <img src="docs/screenshots/falling-notes.png" alt="Notes falling toward a piano keyboard while a song plays" width="820">
 </p>
 
@@ -71,7 +76,9 @@ Found something broken? That is expected, and an issue with the song style and y
 
 ## Try it
 
-You need [Node.js](https://nodejs.org/) 20 or newer.
+The quickest way is the [live demo](https://sabalys-ramunas.github.io/open-piano/). Nothing you add there is uploaded; it all stays in your browser.
+
+To run it yourself you need [Node.js](https://nodejs.org/) 20 or newer.
 
 ```bash
 npm install
@@ -125,7 +132,6 @@ A lesson file holds **notes only**: the notes, their timing, which hand plays th
 
 - Chords and piano parts that sound like a pianist wrote them.
 - Reading the tune from the separated voice instead of the whole mix.
-- A hosted version, so trying it is one click.
 - A public catalog where people share and improve lessons.
 - A proper iPad release once it has been tested on real devices.
 - A real name. "Piano" is a placeholder, set in one place: `src/app/brand.ts`.

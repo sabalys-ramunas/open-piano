@@ -98,6 +98,8 @@ function pwa(): Plugin {
 }
 
 export default defineConfig({
+  // Hosting under a folder (for example GitHub Pages at /open-piano/): set PIANO_BASE to that folder.
+  base: process.env.PIANO_BASE ?? '/',
   plugins: [pwa()],
   // The end-to-end tests run their own dev server: no live reload there, so
   // editing a file while a long test runs does not reload the page under it.
